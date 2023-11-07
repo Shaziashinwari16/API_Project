@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>API Projects</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>
+        <h2>JavaScript Validation API</h2>
+
+        <p>Enter a number and click OK:</p>
+
+        <input type="number" id="id1" min="15" max="30" required />
+        <button onclick="myFunction()">OK</button>
+
+        <p>
+          If the number is less than 30 or greater than 45, an error message
+          will be displayed.
+        </p>
+
+        <p id="test1"></p>
+      </div>
+
+      <div>
+        <h2>JavaScript History API</h2>
+
+        <p>Click "Go Back" to your previously visited URL.</p>
+        <p><i>Make sure you have a previous url before this one!</i></p>
+        <ol>
+          <li>Copy the URL up top.</li>
+          <li>Go to any website!</li>
+          <li>Paste the copied URL back in.</li>
+          <li>
+            Now when you hit "Go Back" it will take you back just like your
+            browser's back button!
+          </li>
+        </ol>
+
+        <button onclick="goBack()">Go Back</button>
+      </div>
+
+      <div>
+        <h2>Web Geolocation API</h2>
+
+        <p>Click "Find Me" to show your geographical position.</p>
+
+        <button onclick="findMe ()">Find Me</button>
+
+        <p id="test2"></p>
+        <p id="mapholder"></p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
